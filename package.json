@@ -1,0 +1,37 @@
+{
+  "name": "community-portal",
+  "version": "1.0.0",
+  "description": "A dynamic community portal website built using Node.js, Express, and EJS.",
+  "keywords": [
+    "community",
+    "portal",
+    "nodejs",
+    "express",
+    "ejs",
+    "website"
+  ],
+  "homepage": "https://github.com/FreeYungHammy/dynamic-community-portal#readme",
+  "bugs": {
+    "url": "https://github.com/FreeYungHammy/dynamic-community-portal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeYungHammy/dynamic-community-portal.git"
+  },
+  "license": "ISC",
+  "author": "Brett Wilson, Danielle Janse van Vuuren, Ruan Bath, Le Marsh Vaughan, Calvin Nijenhuis",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

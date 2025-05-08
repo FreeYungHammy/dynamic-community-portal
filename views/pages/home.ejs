@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <h1>Welcome to the Community Portal</h1>
+    <ul>
+        <% teamMembers.forEach(member => { %>
+            <li><%= member.name %> - <%= member.role %></li>
+        <% }) %>
+    </ul>
+    <%- include('../partials/footer') %>
+</body>
+</html>
