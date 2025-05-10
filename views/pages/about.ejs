@@ -1,1 +1,19 @@
-<h1>About Us</h1>
+<%- include('../partials/header') %>
+
+<header class = "about-page">
+    <h1>About Us</h1>
+</header>
+
+<secton class="team-section">
+<ul class="team-list">
+    <% teamMembers.forEach(member => { %>
+        <li class="member-card">
+            <h3><%= member.name %></h3>
+            <p><%= member.role %></p>
+            <img src="public/images/<%= member.image%>" alt="<%= member.name %> image" > <%#also needs to be added to folder and to pageRoutes, i think it would be cute to have images :) %>
+        </li>
+    <% }) %>
+</ul>
+</secton>
+
+<%- include('../partials/footer') %>
