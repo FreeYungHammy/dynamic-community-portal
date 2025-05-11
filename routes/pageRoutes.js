@@ -51,7 +51,8 @@ router.post('/contact', (req, res) => {
 
 // thank you page
 router.get('/thankyou', (req, res) => {
-    res.render('pages/thankyou');
+    res.render('pages/thankyou', { messages });
 });
 
 module.exports = router;
+
