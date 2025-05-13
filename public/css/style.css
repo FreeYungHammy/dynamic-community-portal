@@ -1,19 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* headers for all pages*/
+header {
+    background-color: #003380;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+}
+
+/* sub header for form page */
+#subheader {
+text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
 }
 
 header nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
+    margin: 0 25px;
+    color: white;
+    font-weight: bold;
 }
 
+header nav a:hover {
+    text-decoration: underline;
+    color: #1075da;
+}
+
+/* Nav bar at top of screen */
+.container {
+    font-size: 20px;
+    color: #1e6dc9;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 
+        background-color 0.3s ease, 
+        transform 0.3s ease, 
+        text-decoration 0.3s ease;
+    text-align: right;
+    background-color: #ffffff;
+    padding: 24px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.container nav a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #1075da;
+}
+
+/* Events header on home screen section */
+.events-section,
+.team-section {
+margin-bottom: 48px;
+text-align: center;
+}
+
+/* All team member information */
+.event-list,
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.event-card img,
+.member-card img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img,
+.member-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/* Contact us form */
+form {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* buttons on form */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+/* button effects */
+button:hover {
+    background-color: #1075da;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Small grey band at bottom of page */ 
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     color: #777;
+    padding: 16px;
+    background-color: #eaeaea;
+    color: #555
 }

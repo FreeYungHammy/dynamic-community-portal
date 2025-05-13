@@ -1,6 +1,9 @@
 <%- include('../partials/header') %>
 
-<h1>Contact Us</h1>
+<header class = "contact-page">
+    <h1>Contact Us</h1>
+</header>
+<h3 id=subheader>Please fill in your contact information in the form below</h3>
 
 <form method="POST" action="/contact">
   <label for="name">Name:</label><br />
@@ -12,7 +15,8 @@
   <label for="message">Message:</label><br />
   <textarea id="message" name="message" placeholder="Your Message" required></textarea><br /><br />
 
-  <button type="submit">Send</button>
+  <button id=sendbtn type="submit">Send</button>
+  <button id=resetbtn type="reset">Reset</button>
 </form>
 
 <%- include('../partials/footer') %>
