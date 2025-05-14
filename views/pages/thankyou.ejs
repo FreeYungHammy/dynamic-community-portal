@@ -2,15 +2,18 @@
 
 <% recentMessage = messages[messages.length - 1] %>
 
-<h1>Thank You!</h1>
-<h2><%= recentMessage.name %></h2>
-<p>Your message has been received.</p>
+<div class="thankyou-container">
+    <div class="thankyou-box">
+        <h1>Thank You!</h1>
+        <h2><%= recentMessage.name %></h2>
+        <p>Your message has been received.</p>
 
-<h4>Your Message</h4>
-<p><%= recentMessage.message %></p>
+        <h4>Your Message</h4>
+        <p><%= recentMessage.message %></p>
 
-<div>
-    <p>You will receive email confirmation soon at <b> <%= recentMessage.email %> </b></p>
-</div>
+        <div>
+            <p>You will receive email confirmation soon at <b> <%= recentMessage.email %> </b></p>
+        </div>
+    </div>
 
 <%- include('../partials/footer') %>

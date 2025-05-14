@@ -6,11 +6,11 @@ const router = express.Router();
 // replace with real data - just dummy data for now
 const teamMembers = [
     { name: 'Calvin Nijenhuis', role: 'Team Leader', studNum: 600373},
-    { name: 'Brett Wilson', role: 'Backend Developer', studNum: 601081 },
+    { name: 'Brett Wilson', role: 'Backend Developer', studNum: 601081},
     { name: 'Danielle Janse van Vuuren', role: 'Backend Developer', studNum: 600699},
     { name: 'Ruan Bath', role: 'Frontend Developer', studNum:  600544},
-    { name: 'Le-Marsh Vaughan', role: 'Data Manager', studNum: 600857}
-];
+    { name: 'Le-Marsh Vaughan', role: 'Data Manager', studNum: 600857},
+]
 
 // replace with real data - just dummy data for now
 const events = [

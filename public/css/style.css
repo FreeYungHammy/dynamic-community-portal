@@ -2,15 +2,29 @@
     box-sizing: border-box;
 }
 
+/* Styling for all pages (text, background, etc.) */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: url('/images/background.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     text-align: center;
     padding-top: 80px;
+}
+
+.header-bg {
+background: #ffffff;
+padding: 15px 30px;
+border-radius: 12px;
+display: inline-block;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+margin: 24px auto;
 }
 
 /* headers for all pages*/
@@ -24,6 +38,7 @@ header {
 /* sub header for form page */
 #subheader {
 text-align: center;
+background-color: #ffffff;
 }
 
 header nav {
@@ -73,8 +88,46 @@ margin-bottom: 48px;
 text-align: center;
 }
 
-/* All team member information */
-.event-list,
+/* Home page events animation */
+.event-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    align-items: center;
+}
+.event-card {
+    opacity: 0;
+    transform: translateX(-100vw);
+    transition: opacity 1s ease, transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+ /* Events page animation */ 
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .team-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -82,6 +135,21 @@ text-align: center;
     list-style-type: none;
     padding: 0;
     text-align: center;
+}
+
+/* Team member in cards */
+.team-card{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    width: 100%;
+    max-width: 500px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 16px;
 }
 
 .event-card img,
@@ -140,6 +208,27 @@ button:hover {
     background-color: #1075da;
     transform: scale(1.05);
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.thankyou-box {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    padding: 30px 50px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Small grey band at bottom of page */ 
