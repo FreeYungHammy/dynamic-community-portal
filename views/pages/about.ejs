@@ -9,8 +9,9 @@
     <% teamMembers.forEach(member => { %>
         <li class="team-card">
             <h3><%= member.name %></h3>
+            <p><%=member.studNum %></p>
+            <img src="/images/<%= member.image %>" alt="<%= member.name %> image">
             <p><%= member.role %></p>
-            <img src="/images/<%= member.image %>" alt="<%= member.name %> image" >
             <%#also needs to be added to folder and to pageRoutes, i think it would be cute to have images :) %>
         </li>
     <% }) %>
